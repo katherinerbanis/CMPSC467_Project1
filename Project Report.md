@@ -1,5 +1,7 @@
 ## Overview
-  This project analyzes large financial datasets from two stocks (e.g., Microsoft and Apple), focusing on identifying patterns and detecting anomalies. Specifically, the analysis involves detecting the periods of maximum gain or loss using the divide-and-conquer approach, sorting data using merge sort, and detecting anomalies in volume vs. price data using a closest pair of points algorithm. This reports explains the purpose and functionality of each part of the code and why specific algorithms were used as well as a detailed explanation of the results.
+This project analyzes large financial datasets from two stocks (e.g., Microsoft and Apple), focusing on identifying patterns and detecting anomalies. Specifically, the analysis involves detecting the periods of maximum gain or loss using the divide-and-conquer approach, sorting data using merge sort, and detecting anomalies in volume vs. price data using a closest pair of points algorithm. 
+
+This reports explains the purpose and functionality of each part of the code and why specific algorithms were used as well as a detailed explanation of the results.
 
 ##
 ### 1. Merge Sort for Sorting Data by Date
@@ -188,15 +190,18 @@ Such a large discrepancy coulld reflect **external events** like product release
 - Apple's anomaly (with a much larger price difference) suggests a **bigger price shock** occurred without a corresponding volume change, which could indicate a market event or external factor affecting the stock price.
 
 ##
-The analysis demonstrates that Microsoft had a larger impact on the combined stock performance during the maximum gain period. Whileboth stocks showed strong growth, Microsoft's stock had a greater individual maximum gain. Additinoally, the closest pair analysis revealed potential anomalies in the trading behavior of both stocks, suggesting moments of market volatility or unusual pricing patterns. These findings provide valuable insights into stock performance and potential risks associated with price fluctuations.
+The analysis demonstrates that Microsoft had a larger impact on the combined stock performance during the maximum gain period. While both stocks showed strong growth, Microsoft's stock had a greater individual maximum gain. Additinoally, the closest pair analysis revealed potential anomalies in the trading behavior of both stocks, suggesting moments of market volatility or unusual pricing patterns. These findings provide valuable insights into stock performance and potential risks associated with price fluctuations.
 
 ##
 
 <img width="994" alt="Screenshot 2024-10-20 at 7 19 11 PM" src="https://github.com/user-attachments/assets/7873055a-801d-4401-a4d6-cd8ff1816df1">
 
+
 This graph shows the price performance of **Microsoft** (blue) and Apple (orange) over time, with the **maximum gain period** highlighted in green. 
 
-1. Stock Price Trends
+The following is a detailed analysis of the graph:
+
+**1. Stock Price Trends**
 
 **Microsoft**
 - The blue line represents Microsoft’s stock price performance from around 2014 through 2024.
@@ -210,7 +215,7 @@ This graph shows the price performance of **Microsoft** (blue) and Apple (orange
 - Around 2020, Apple also experiences significant growth, though not as dramatic as Microsoft’s.
 - Post-2021, Apple also shows a dip, followed by a moderate recovery into 2024.
 
-2. Maximum Gain Period
+**2. Maximum Gain Period**
 - The green shaded region marks the period identified as the **maximum gain period**, which extends from **2015** to **2024**.
 - During this period, both stocks experienced considerable growth, though Microsoft’s stock price growth was more substantial than Apple’s.
 - Notably, Microsoft’s stock price had a larger increase over this period, consistent with the data showing that **Microsoft contributed more** to the combined maximum gain.
