@@ -8,7 +8,7 @@ This reports explains the purpose and functionality of each part of the code and
 
 **Function:** `mergeSort(arr, indices)`
 
-**Purpose:** This function ensures that the stock data is chronologically sorted based on the `Date` column. Sorting the data is essential for time-series analysis because it ensures the price and volume changes are calculated in the correct orer.
+**Purpose:** This function ensures that the stock data is chronologically sorted based on the `Date` column. Sorting the data is essential for time-series analysis because it ensures the price and volume changes are calculated in the correct order.
 
 **How it works:**
 - The function recursively divides the array into two halves (left and right) until the size of the subarrays is 1 (base case of recursion).
@@ -30,14 +30,14 @@ This reports explains the purpose and functionality of each part of the code and
 ##  
 ### 3. Maximum Subarray (2D) - Combined Stock Analysis
 
-**Function:** `maxSubarray2d(matrix)`
+**Function:** `maxSubarray2D(matrix)`
    
-**Purpose:** this funciton extends the 1D maximum subarray algorithm to handle two stocks simultaneously by using a 2D matrix of their daily price changes. It identifies the combined maximum gain period for both Microsoft and Apple, showing which stock contributed the most during this period.
+**Purpose:** This function extends the 1D maximum subarray algorithm to handle two stocks simultaneously by using a 2D matrix of their daily price changes. It identifies the combined maximum gain period for both Microsoft and Apple, showing which stock contributed the most during this period.
 
 **How it works:**
-- The 2D matrix cntains daily price changes for Microsoft and Apple. The function iterates through pairs of columns (days) and compresses the rows into a 1D array (sum of the price changes for both stocks on those days).
+- The 2D matrix contains daily price changes for Microsoft and Apple. The function iterates through pairs of columns (days) and compresses the rows into a 1D array (sum of the price changes for both stocks on those days).
 - The `maxSubarray1D` function is then applied to this compressed array to find the maximum gain across both stocks for each column pair.
-- The final results is the period (start and end indices) wehre the combined price changes of both stocks resulted in the largest overall gain, along with the contribution from each stock.
+- The final results is the period (start and end indices) where the combined price changes of both stocks resulted in the largest overall gain, along with the contribution from each stock.
 
 ##
 ### 4. Closest Pair of Points (Divide and Conquer)
@@ -70,7 +70,7 @@ This reports explains the purpose and functionality of each part of the code and
 **Purpose:** This function visualizes the stock price performance for Microsoft and Apple, highlighting the period of maximum gain as a shaded region on the plot.
   
 **How it works:**
-- It plots the closing prices of both stocks over time, with Date on the x-axis and the closing prices on the y-axis.
+- It plots the closing prices of both stocks over time, with Date on the x-axis and the Closing Prices on the y-axis.
 - The maximum gain period is highlighted using a shaded region (axvspan) between the start and end dates.
 - The plot provides a clear visual representation of when the stocks performed best, helping users quickly identify important time periods for both stocks.
 
@@ -105,7 +105,7 @@ This code provides a comprehensive analysis of stock performance by identifying 
 
 **Explanation**
 
-The **combined maximum gain** refers to the period where **both Microsoft and Apple** together experienced the highest overall increase in stock prices. This gain is calculated by summing the proce changes for both stocks during this period.
+The **combined maximum gain** refers to the period where **both Microsoft and Apple** together experienced the highest overall increase in stock prices. This gain is calculated by summing the price changes for both stocks during this period.
 
 The maximum combined gain occured betwen **August 25, 2015** and **July 10, 2024**. During this time, both stocks contributed a total gain of approximately **632.82**.
 
@@ -114,12 +114,13 @@ This indicates that during this nearly nine-year period, the combined performanc
 **Contribution Breakdown:**
 
 **Microsoft Contribution:** 425.78
+
 **Apple Contribution:** 207.05
 
 Microsoft contributed the larger share of the combined gain during this period, accounting for approximately **67%** of the total gain. Apple, while also growing significantly, contributed **33%** of the total gain. This suggests that **Microsoft's stock had a larger growth trajectory** over this period compared to Apple.
 
 ##
-### 2. Individual Maxiumum Gain Periods
+### 2. Individual Maximum Gain Periods
 
 **Microsoft**
 
@@ -143,15 +144,16 @@ From these results, it is clear that **Microsoft** had a much larger individual 
 
 **Why Different Dates?**
 
-The **maximum gain periods** for each stock do not fully align because the stocks likely experienced their peak growth at different times. Microsoft's stock began its maximum gain period earlier (April 2015), while Apple's strongest growth started about a year later (May 2016)
+The **maximum gain periods** for each stock do not fully align because the stocks likely experienced their peak growth at different times. Microsoft's stock began its maximum gain period earlier (April 2015), while Apple's strongest growth started about a year later (May 2016).
 
 ##
 ### Microsoft vs Apple Comparison
 
 **Observation**
-- Microsoft had a larger individual maximum gain, **427.27**, compared to Apple's **212.24**.
 
-This highlights that **Microsoft** showed stronger price growth over its peak period, controbuting more to the overall combined gain as well. Apple still experienced significant growth but lagged behind Microsoft during this time.
+Microsoft had a larger individual maximum gain, **427.27**, compared to Apple's **212.24**.
+
+This highlights that **Microsoft** showed stronger price growth over its peak period, contributing more to the overall combined gain as well. Apple still experienced significant growth but lagged behind Microsoft during this time.
 
 ##
 ### Anomalies Detected via Closest Pair of Points
@@ -165,12 +167,12 @@ The **closest pair algorithm** was used to detect potential anomalies in volume 
 
 **Explanation**
 
-The closest pair for Microsoft shows tow very close trading volumes (a differene of just **20** shares), but the prices between these two data points diff significantly— by about **$15.64**.
+The closest pair for Microsoft shows two very close trading volumes (a difference of just **20** shares), but the prices between these two data points differ significantly— by about **$15.64**.
 
-This suggests that despite a very minor difference in trading volume, the stock price dropped notably from **$17.26** to **$56.62**. Such a scenario might indicate **market volatility**, where external factors influenced price significantly without impacting trading volume much. This could be a signal or **price inefficiency** or an unsusual market response.
+This suggests that despite a very minor difference in trading volume, the stock price dropped notably from **$73.26** to **$57.62**. Such a scenario might indicate **market volatility**, where external factors influenced price significantly without impacting trading volume much. This could be a signal or **price inefficiency** or an unsusual market response.
 
 **Apple Closest Pair**
-- **Volume 1:** 94,259,720 | **Price 1:** 43.75
+- **Volume 1:** 94,359,720 | **Price 1:** 43.75
 - **Volume 2:** 94,359,810 | **Price 2:** 128.70
 - **Distance:** 123.76
 
@@ -178,19 +180,20 @@ This suggests that despite a very minor difference in trading volume, the stock 
 
 For Apple, the closest pair of points shows nearly identical volumes but a massive price difference of **$84.95**. This suggests a similar pattern where large price movements ocurred without much change in trading volume. The distance between these two data points (123.76) is much larger than Microsoft's, indicating a **significant market anomaly** for Apple.
 
-Such a large discrepancy coulld reflect **external events** like product releases, earnings reports, or macroeconomics factors that drastically altered Apple's stock price without affecting the volume much.
+Such a large discrepancy could reflect **external events** like product releases, earnings reports, or macroeconomics factors that drastically altered Apple's stock price without affecting the volume much.
 
 ##
 ### Overall Insights
 **1. Microsoft Dominated the Combined Maximum Gain**
-- Microsoft was the major contributor to the combined gain during the maximum gain period, accounting for about 67% of the total gain.
+- Microsoft was the major contributor to the combined gain during the maximum gain period, accounting for about **67%** of the total gain.
 - The individual maximum gain periods for each stock do not overlap exactly, indicating that each stock experienced its peak growth at different times.
+  
 **2. Anomalies Detected in Both Stocks**
 - The closest pair analysis highlights anomalies where significant price movements occured with minimal changes in volume. For both Microsoft and Apple, these price discrepancies suggest moments of **market volatility** or potential inefficiencies.
 - Apple's anomaly (with a much larger price difference) suggests a **bigger price shock** occurred without a corresponding volume change, which could indicate a market event or external factor affecting the stock price.
 
 ##
-The analysis demonstrates that Microsoft had a larger impact on the combined stock performance during the maximum gain period. While both stocks showed strong growth, Microsoft's stock had a greater individual maximum gain. Additinoally, the closest pair analysis revealed potential anomalies in the trading behavior of both stocks, suggesting moments of market volatility or unusual pricing patterns. These findings provide valuable insights into stock performance and potential risks associated with price fluctuations.
+This analysis demonstrates that Microsoft had a larger impact on the combined stock performance during the maximum gain period. While both stocks showed strong growth, Microsoft's stock had a greater individual maximum gain. Additinoally, the closest pair analysis revealed potential anomalies in the trading behavior of both stocks, suggesting moments of market volatility or unusual pricing patterns. These findings provide valuable insights into stock performance and potential risks associated with price fluctuations.
 
 ##
 
