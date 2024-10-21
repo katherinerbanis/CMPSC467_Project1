@@ -198,6 +198,13 @@ def closestPairDC(points):
     return closestPair(points)
 
 
+# Format closest pair for better output readability
+def closestPairFormat(pair, distance):
+    return f"Volume 1: {pair[0][0]:,.0f}, Price 1: {pair[0][1]:,.2f}\n" \
+           f"Volume 2: {pair[1][0]:,.0f}, Price 2: {pair[1][1]:,.2f}\n" \
+           f"Distance: {distance:,.2f}"
+
+
 # Plot the stock price performance and maximum gain period
 def plotStockPerformance(data, start, end, stock1='Microsoft', stock2='Apple'):
     plt.figure(figsize=(10, 6))
@@ -209,13 +216,6 @@ def plotStockPerformance(data, start, end, stock1='Microsoft', stock2='Apple'):
     plt.ylabel("Price")
     plt.legend()
     plt.show()
-
-
-# Format closest pair for better output readability
-def closestPairFormat(pair, distance):
-    return f"Volume 1: {pair[0][0]:,.0f}, Price 1: {pair[0][1]:,.2f}\n" \
-           f"Volume 2: {pair[1][0]:,.0f}, Price 2: {pair[1][1]:,.2f}\n" \
-           f"Distance: {distance:,.2f}"
 
 
 # Main analysis function to process stock data and detect patterns
