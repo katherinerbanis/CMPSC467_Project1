@@ -193,7 +193,7 @@ Such a large discrepancy could reflect **external events** like product releases
 - Apple's anomaly (with a much larger price difference) suggests a **bigger price shock** occurred without a corresponding volume change, which could indicate a market event or external factor affecting the stock price.
 
 ##
-This analysis demonstrates that Microsoft had a larger impact on the combined stock performance during the maximum gain period. While both stocks showed strong growth, Microsoft's stock had a greater individual maximum gain. Additinoally, the closest pair analysis revealed potential anomalies in the trading behavior of both stocks, suggesting moments of market volatility or unusual pricing patterns. These findings provide valuable insights into stock performance and potential risks associated with price fluctuations.
+This analysis demonstrates that Microsoft had a larger impact on the combined stock performance during the maximum gain period. While both stocks showed strong growth, Microsoft's stock had a greater individual maximum gain. Additionally, the closest pair analysis revealed potential anomalies in the trading behavior of both stocks, suggesting moments of market volatility or unusual pricing patterns. These findings provide valuable insights into stock performance and potential risks associated with price fluctuations.
 
 ##
 
