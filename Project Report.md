@@ -89,10 +89,6 @@ This reports explains the purpose and functionality of each part of the code and
 - The function also detects anomalies by calculating the closest pair of points (volume vs. price) for both stocks using the `closestPairDC` function.
 - Finally, it prints the results and plots the stock performance, highlighting the maximum gain period.
 
-## 
-This code provides a comprehensive analysis of stock performance by identifying periods of maximum gain using Kadane’s algorithm in both 1D (for individual stocks) and 2D (for combined stock data). It also detects anomalies in volume and price data using a divide-and-conquer closest pair algorithm. The use of merge sort ensures the chronological integrity of the data, and the visualization helps highlight key trends in stock performance. This multi-faceted approach allows users to analyze stock data for patterns, detect potential anomalies, and make data-driven decisions.
-
-
 ## Results and Explanation
 
 ### 1. Maximum Combined Period
@@ -193,9 +189,6 @@ Such a large discrepancy could reflect **external events** like product releases
 - Apple's anomaly (with a much larger price difference) suggests a **bigger price shock** occurred without a corresponding volume change, which could indicate a market event or external factor affecting the stock price.
 
 ##
-This analysis demonstrates that Microsoft had a larger impact on the combined stock performance during the maximum gain period. While both stocks showed strong growth, Microsoft's stock had a greater individual maximum gain. Additionally, the closest pair analysis revealed potential anomalies in the trading behavior of both stocks, suggesting moments of market volatility or unusual pricing patterns. These findings provide valuable insights into stock performance and potential risks associated with price fluctuations.
-
-##
 
 <img width="994" alt="Screenshot 2024-10-20 at 7 19 11 PM" src="https://github.com/user-attachments/assets/7873055a-801d-4401-a4d6-cd8ff1816df1">
 
@@ -235,6 +228,10 @@ The following is a detailed analysis of the graph:
 - **Volatility**: Both stocks show some level of volatility, with periods of sharp price increases and corrections, but the general long-term trend for both is upward.
 - **Apple’s Consistency**: Apple’s growth is more gradual compared to Microsoft. It shows fewer dramatic peaks, indicating that its stock has been more consistent over time, but with less explosive growth than Microsoft.
 
-##
-This graph visually supports the analysis of the maximum gain period and the contributions of Microsoft and Apple. Microsoft’s stock experienced a sharper and more significant rise, particularly after 2015, making it the major contributor to the combined maximum gain. Apple, while still growing, did not experience the same level of explosive growth. Both stocks demonstrate typical market behavior with rapid growth periods, corrections, and eventual recoveries, particularly after the pandemic.
+## Conclusion
 
+This analysis provides a comprehensive evaluation of stock performance by identifying periods of maximum gain using **Kadane’s algorithm** for both individual stocks (1D) and combined stock data (2D). Additionally, the detection of anomalies in volume and price data using a **divide-and-conquer closest pair algorithm** offers insights into unusual trading patterns and market volatility. The use of **merge sort** ensures the chronological integrity of the dataset, while the visualization highlights key trends in stock performance over time.
+
+The results demonstrate that **Microsoft** had a larger impact on the combined stock performance during the maximum gain period, contributing more significantly to the overall growth. While both stocks experienced strong growth, Microsoft’s stock showed a greater individual maximum gain compared to Apple. The closest pair analysis further revealed potential anomalies in the trading behavior of both stocks, suggesting moments of market volatility or pricing inefficiencies, which could point to broader market risks.
+
+The accompanying graph visually supports these findings, illustrating the maximum gain period and showing how Microsoft experienced a sharper and more substantial rise in stock price, particularly after 2015, making it the dominant contributor to the combined gain. Apple, while also growing, did not exhibit the same explosive trajectory. Both stocks demonstrate typical market behavior with periods of rapid growth, corrections, and eventual recovery, especially following the pandemic. These insights are valuable for understanding stock performance, identifying risks, and making informed, data-driven decisions.
